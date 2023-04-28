@@ -9,7 +9,9 @@
       />
     </TransitionGroup>
   </div>
-  <h3 v-else>List todos empty</h3>
+  <div v-else class="container todo-list__empty">
+    <h3>List todos empty</h3>
+  </div>
 </template>
 
 <script>
@@ -29,6 +31,11 @@ export default {
 <style lang="scss" scoped>
 .todo-list {
   margin-top: 20px;
+
+  &__empty {
+    margin-top: 40px;
+    text-align: center;
+  }
 }
 
 .todo-list-enter-active,

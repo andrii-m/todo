@@ -15,7 +15,7 @@
         </div>
         <div class="col-12 col-xl-3">
           <AppSelect
-            label="Filter by status"
+            label="Filter by user id"
             initValue="All"
             :options="userIdOptions"
             @select="setCurrentUserId"
